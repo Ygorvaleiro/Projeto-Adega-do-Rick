@@ -1,0 +1,74 @@
+/*cabeçalho*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não quebre*/
+}
+body{
+    background-color: aliceblue;
+    text-transform: capitalize;
+}
+
+header{
+    background-color: black;
+    flex-direction: column; /* No mobile, logo fica em cima e menu embaixo */
+    align-items: center;
+    padding: 15px;
+    gap: 15px;/*espaça os itens*/
+}
+
+header img {
+    max-height: 150px; /* Controla o tamanho do seu logo para não estourar */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;/*pra mover os itens/menu*/
+    gap: 15px; /* Dá espaço entre as opções do menu (home, bebidas...) */
+    flex-wrap: wrap;/*deixa o item lado a lado*/
+    justify-content: center;/*deixa o item no meio(centralizado)*/
+}
+
+
+a{
+    color: yellow; 
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s; /* Efeito suave ao passar o mouse */
+    
+}
+
+a:hover{
+    color: white; /*vai destacar o link quando passar o mouse em cima*/
+}
+
+.container-produto{
+    display: flex;
+    align-items: flex-start;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+/*corpo(main)*/
+.item-produtos{
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 12px;
+    text-align: center;
+   /* padding: 10px 18px;*/
+
+}
+.item-produtos > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.preco{
+    color: rgb(27, 234, 0);
+    font-weight: bold;
+   
+}
